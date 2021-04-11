@@ -1,0 +1,21 @@
+public class Main {
+int x,y;
+public static void maiin(String[] args) throws Exception {
+
+Scanner sc = new Scanner(System.in);
+Main m=new Main();
+System.out.println("Enter the value of two numbers");
+m.x = sc.nextInt();
+m.y = sc.nextInt();
+System.out.println("first and second numbers before swap: "+m.x +" "m.y");
+swap(m);
+
+System.out.println("After swap: "+m.x +" "+m.y");
+
+}
+public static void swap(Main m) {
+int t=m.x;
+m.x=m.y;
+m.y=t;
+}
+}
